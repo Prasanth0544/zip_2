@@ -4,11 +4,11 @@
 .back-btn { background: none; border: none; cursor: pointer; }
 .config-form { max-width: 720px; margin-top: 16px; display: grid; gap: 16px; }
 .form-section { border: 1px solid #dcdcdc; padding: 12px; border-radius: 6px; background: #fff; }
-.form-section h3 { margin: 0 0 8px; }
+.form-section h3 { margin: 0 0 8px; color: #2c3e50; }
 label { display: grid; gap: 6px; margin-bottom: 8px; }
 label.inline { display: flex; align-items: center; gap: 8px; }
 input[type="text"], input[type="date"] { padding: 8px; border: 1px solid #bfbfbf; border-radius: 4px; background: #fff; }
 .form-actions { display: flex; justify-content: flex-end; }
 .btn-primary { padding: 10px 16px; border: 1px solid #bfbfbf; border-radius: 4px; background: #f5f5f5; color: #222; cursor: pointer; }
 .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; }
-.error-banner { background: #fff3cd; color: #664d03; padding: 8px; border-radius: 4px; border: 1px solid #ffe69c; }
+.error-banner { background: white; color: #333; padding: 8px; border-radius: 4px; border: 1px solid #e0e0e0; }

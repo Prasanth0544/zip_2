@@ -12,10 +12,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 15px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: white;
   border-radius: 8px;
   margin-bottom: 15px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: 1px solid #e0e0e0;
 }
 
 .config-item {
@@ -27,7 +28,7 @@
 
 .config-label {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -35,7 +36,7 @@
 
 .config-value {
   font-size: 16px;
-  color: white;
+  color: #333;
   font-weight: 600;
 }
 
@@ -43,12 +44,13 @@
 /* Current Station Banner */
 .current-station-banner {
   padding: 12px;
-  background: #e3f2fd;
+  background: white;
   border-radius: 6px;
   text-align: center;
   font-size: 14px;
-  color: #1565c0;
+  color: #333;
   margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
 }
 
 /* Journey Section */
@@ -63,7 +65,7 @@
 .journey-section h2 {
   margin: 0 0 20px 0;
   font-size: 18px;
-  color: #333;
+  color: #2c3e50;
 }
 
 /* 4 COLUMNS × 7 ROWS GRID (28 STATIONS) */
@@ -80,23 +82,23 @@
   padding: 12px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  background: #fafafa;
+  background: white;
   transition: all 0.3s;
 }
 
 .station-item.completed {
-  background: #e8f5e9;
+  background: white;
   border-color: #4caf50;
 }
 
 .station-item.current {
-  background: #e3f2fd;
+  background: white;
   border-color: #2196f3;
   box-shadow: 0 2px 8px rgba(33, 150, 243, 0.3);
 }
 
 .station-item.upcoming {
-  background: #fafafa;
+  background: white;
   border-color: #ddd;
 }
 
@@ -198,7 +200,7 @@
 }
 
 .stat-box {
-  background: #f9f9f9;
+  background: white;
   padding: 15px;
   border-radius: 6px;
   text-align: center;
@@ -260,7 +262,7 @@
 }
 
 .phase1-card:hover {
-  background: linear-gradient(135deg, #f093fb10 0%, #f5576c10 100%);
+  background: white;
   border-color: #f5576c;
 }
 
@@ -270,7 +272,7 @@
 }
 
 .reallocation-card:hover {
-  background: linear-gradient(135deg, #4facfe10 0%, #00f2fe10 100%);
+  background: white;
   border-color: #00f2fe;
 }
 
@@ -286,7 +288,7 @@
 .action-content h4 {
   margin: 0 0 5px 0;
   font-size: 16px;
-  color: #333;
+  color: #2c3e50;
 }
 
 .action-content p {
@@ -320,7 +322,7 @@
 .control-box-compact h3 {
   margin: 0 0 12px 0;
   font-size: 14px;
-  color: #333;
+  color: #34495e;
   font-weight: 600;
   text-align: center;
 }
@@ -432,7 +434,7 @@
 .add-passenger-center-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  background: linear-gradient(135deg, #4caf5010 0%, #66bb6a10 100%);
+  background: white;
   border-color: #388e3c;
 }
 
@@ -444,7 +446,7 @@
   margin: 0;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #2c3e50;
 }
 
 .add-passenger-center-card p {
@@ -464,7 +466,7 @@
 .nav-section h3 {
   margin: 0 0 15px 0;
   font-size: 14px;
-  color: #333;
+  color: #34495e;
   font-weight: 600;
 }
 
@@ -480,7 +482,7 @@
   align-items: center;
   gap: 6px;
   padding: 10px;
-  background: #f7f7f7;
+  background: white;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   cursor: pointer;
@@ -488,7 +490,7 @@
 }
 
 .nav-btn:hover:not(:disabled) {
-  background: #e9ecff;
+  background: white;
   border-color: #667eea;
   color: #333;
   transform: translateY(-2px);
@@ -511,7 +513,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.75);
+  background: rgba(255,255,255,0.9);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -557,6 +559,7 @@
 .modal-header h3 {
   margin: 0;
   font-size: 18px;
+  color: #2c3e50;
 }
 
 .close-btn {

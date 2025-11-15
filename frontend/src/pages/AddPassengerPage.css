@@ -2,7 +2,6 @@
 
 .add-passenger-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -32,13 +31,14 @@
 
 /* Header Styling */
 .page-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  color: #333;
   padding: 2.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .header-content {
@@ -50,12 +50,11 @@
 .header-icon {
   width: 60px;
   height: 60px;
-  background: rgba(255, 255, 255, 0.2);
+  background: #f5f5f5;
   border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(10px);
 }
 
 .header-icon svg {
@@ -69,6 +68,7 @@
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.5px;
+  color: #2c3e50;
 }
 
 .header-content p {
@@ -81,20 +81,19 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: #f5f5f5;
+  color: #333;
+  border: 2px solid #e0e0e0;
   padding: 0.75rem 1.5rem;
   border-radius: 12px;
   font-size: 0.95rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
 }
 
 .back-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: #e0e0e0;
   transform: translateX(-4px);
 }
 
@@ -118,7 +117,7 @@
   gap: 0.75rem;
   font-size: 1.25rem;
   font-weight: 700;
-  color: #2d3748;
+  color: #2c3e50;
   margin: 0 0 1.5rem 0;
   padding-bottom: 0.75rem;
   border-bottom: 3px solid #e2e8f0;
@@ -233,12 +232,13 @@
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  background: #fed7d7;
+  background: white;
   color: #c53030;
   padding: 1rem 1.25rem;
   border-radius: 12px;
   margin-bottom: 1.5rem;
   border-left: 4px solid #fc8181;
+  border: 1px solid #fc8181;
   animation: shake 0.4s ease;
 }
 
@@ -291,7 +291,7 @@
 }
 
 .submit-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #667eea;
   color: white;
   box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
 }
@@ -390,7 +390,7 @@
 }
 
 .success-animation h2 {
-  color: #2d3748;
+  color: #2c3e50;
   font-size: 1.75rem;
   margin: 0 0 0.5rem 0;
 }

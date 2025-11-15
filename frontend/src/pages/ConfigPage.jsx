@@ -6,17 +6,14 @@ import './ConfigPage.css';
 function ConfigPage({ onClose, loadTrainState }) {
   const [form, setForm] = useState({
     mongoUri: 'mongodb://localhost:27017',
-    stationsDb: '',
+    stationsDb: 'rac',
     stationsCollection: '',
-    passengersDb: '',
+    passengersDb: 'PassengersDB',
     passengersCollection: '',
     trainNo: '',
     trainName: '',
     journeyDate: '',
-    sameDb: true,
-    trainDetailsDb: '',
-    trainDetailsCollection: 'Trains_Details',
-    trainDetailsSameDb: true
+    
   });
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
@@ -43,10 +40,8 @@ function ConfigPage({ onClose, loadTrainState }) {
         mongoUri: form.mongoUri,
         stationsDb: form.stationsDb,
         stationsCollection: form.stationsCollection,
-        passengersDb: form.sameDb ? form.stationsDb : form.passengersDb,
+        passengersDb: form.passengersDb,
         passengersCollection: form.passengersCollection,
-        trainDetailsDb: form.trainDetailsSameDb ? form.stationsDb : form.trainDetailsDb,
-        trainDetailsCollection: form.trainDetailsCollection,
         trainNo: form.trainNo,
         trainName: form.trainName,
         journeyDate: form.journeyDate
@@ -99,10 +94,6 @@ function ConfigPage({ onClose, loadTrainState }) {
         <div className="form-section">
           <h3>Stations</h3>
           <label>
-            Database
-            <input type="text" value={form.stationsDb} onChange={e => update('stationsDb', e.target.value)} required />
-          </label>
-          <label>
             Collection
             <input type="text" value={form.stationsCollection} onChange={e => update('stationsCollection', e.target.value)} required />
           </label>
@@ -110,42 +101,16 @@ function ConfigPage({ onClose, loadTrainState }) {
 
         <div className="form-section">
           <h3>Passengers</h3>
-          <label className="inline">
-            <input type="checkbox" checked={form.sameDb} onChange={e => update('sameDb', e.target.checked)} />
-            Use same database as Stations
-          </label>
-          {!form.sameDb && (
-            <label>
-              Database
-              <input type="text" value={form.passengersDb} onChange={e => update('passengersDb', e.target.value)} required />
-            </label>
-          )}
           <label>
             Collection
             <input type="text" value={form.passengersCollection} onChange={e => update('passengersCollection', e.target.value)} required />
           </label>
         </div>
 
-        <div className="form-section">
-          <h3>Train Details</h3>
-          <label className="inline">
-            <input type="checkbox" checked={form.trainDetailsSameDb} onChange={e => update('trainDetailsSameDb', e.target.checked)} />
-            Use same database as Stations
-          </label>
-          {!form.trainDetailsSameDb && (
-            <label>
-              Database
-              <input type="text" value={form.trainDetailsDb} onChange={e => update('trainDetailsDb', e.target.value)} required />
-            </label>
-          )}
-          <label>
-            Collection
-            <input type="text" value={form.trainDetailsCollection} onChange={e => update('trainDetailsCollection', e.target.value)} required />
-          </label>
-        </div>
+        
 
         <div className="form-section">
-          <h3>Train</h3>
+          <h3>Trains Details</h3>
           {trainList.length > 0 && (
             <label>
               Select Train
