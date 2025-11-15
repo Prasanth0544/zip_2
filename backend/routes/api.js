@@ -7,11 +7,10 @@ const reallocationController = require('../controllers/reallocationController');
 const passengerController = require('../controllers/passengerController');
 const visualizationController = require('../controllers/visualizationController');
 const configController = require('../controllers/configController');
-const trainsController = require('../controllers/trainsController');
 const validationMiddleware = require('../middleware/validation');
 
 // ========== TRAIN ROUTES ==========
-router.get('/trains', (req, res) => trainsController.list(req, res));
+router.get('/trains', (req, res) => trainController.list(req, res));
 // Dynamic configuration setup (from frontend)
 router.post('/config/setup',
   validationMiddleware.sanitizeBody,
