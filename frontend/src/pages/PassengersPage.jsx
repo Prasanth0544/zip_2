@@ -505,9 +505,10 @@ function PassengersPage({ trainData, onClose, onNavigate }) {
                     <th>No.</th>
                     <th>PNR</th>
                     <th>Name</th>
-                    <th>Age</th>
-                    <th>Gender</th>
-                    <th>Status</th>
+                    <th className="th-age">Age</th>
+                    <th className="th-gender">Gender</th>
+                    <th className="th-status">Status</th>
+                    <th className="th-rac">RAC Que_no</th>
                     <th>Class</th>
                     <th>From</th>
                     <th>To</th>
@@ -530,6 +531,7 @@ function PassengersPage({ trainData, onClose, onNavigate }) {
                           {p.pnrStatus}
                         </span>
                       </td>
+                      <td className="td-rac">{p.racStatus || '-'}</td>
                       <td className="td-class">{p.class}</td>
                       <td className="td-from">{p.from}</td>
                       <td className="td-to">{p.to}</td>

@@ -1,0 +1,10 @@
+[33m330f300[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m reac reallocation left
+[33m111230f[m changes to be done on the ReallocationPage.jsx and can be done by addinging passenger site and tte
+[33m2901602[m changes to be done on the ReallocationPage.jsx and its backend files
+[33m13d4b3b[m  need to add <- to exit the homepage and change the logic of eligibility matrix  in rellaoctionpage
+[33m3b43324[m  .md files
+[33ma141ebf[m just upadted the 3-tierAC berth counts and its represntation
+[33mc64a6d2[m added css, looks good and dataset preparation left
+[33m6552dd6[m whithout no css and only white as background color
+[33me0d5a2e[m moved trainscontroller to trainController.jsx
+[33ma56da50[m Clean initial commit

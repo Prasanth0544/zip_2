@@ -498,15 +498,38 @@
 }
 
 .td-age,
-.td-gender {
+.td-gender,
+.td-status,
+.td-rac,
+.td-class {
   text-align: center;
+}
+
+.td-age,
+.td-gender {
   color: #5a6c7d;
 }
 
-.td-status {
+/* Specific alignment for th headers */
+.th-age,
+.th-gender,
+.th-status,
+.th-rac {
   text-align: center;
 }
 
+.td-rac {
+  font-weight: 600;
+  color: #f39c12;
+  font-size: 11px;
+}
+
+.td-class {
+  font-weight: 600;
+  color: #3498db;
+}
+
+/* Badge Styles for Status Column */
 .badge {
   padding: 3px 8px;
   border-radius: 10px;
@@ -524,17 +547,12 @@
   color: white;
 }
 
+.badge.rac,
 .badge.rac-1,
 .badge.rac-2,
 .badge.rac-3 {
   background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
   color: white;
-}
-
-.td-class {
-  font-weight: 600;
-  color: #3498db;
-  text-align: center;
 }
 
 .td-from,
@@ -599,11 +617,11 @@
   .pass-table td {
     padding: 6px;
   }
-  
+
   .vacant-filter-inputs {
     flex-direction: column;
   }
-  
+
   .vacant-filter-input {
     width: 100%;
   }
